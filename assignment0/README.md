@@ -1,4 +1,4 @@
-https://www.apple.com/
+# https://www.apple.com/
 I love their simple design, with a layout that is easy to maneuver. They also use a strong but limited color pallete. The site is also optimized well and loads what seems like instantly.
 
 https://www.pocketpenguins.com/
