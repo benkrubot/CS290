@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>Welcome</Title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="/assets/todo-list.js"></script>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Todo List App</a></li>
+                <li><a href="/basics2">HTML & CSS</a></li>
+            </ul>
+        </div>
+        <div id="section1">
+        <div class="container">
+          <div class="col">
+            <h1>Hello,<span></span></h1>
+            <h1>my name is<span></span></h1>
+            <h1>Benjamin<span></span></h1>
+          </div>
+        
+        <div class="content">
+            <h1>WELCOME TO MY WEBSITE</h1>
+            <h2>Here you will find my todo list app and my simple HTML & CSS page</h2>
+        </div>
+        </div>
+
+        <div id="section2">
+          <div class="content2">
+          <h1>About</h1>
+          <p>I am currently a senior at Oregon State University studying
+            Economics and Computer Science.
+          </p>
+          </div>
+
+          <div class="content3">
+            <h1>Experience</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type 
+              specimen book. It has survived not only five centuries, but also the leap into 
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 
+              1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+              recently with desktop publishing software like Aldus PageMaker including versions of 
+              Lorem Ipsum.</p>
+          </div>
+
+          <div class="content4">
+            <h1>Tools I use</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type 
+              specimen book. It has survived not only five centuries, but also the leap into 
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 
+              1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+              recently with desktop publishing software like Aldus PageMaker including versions of 
+              Lorem Ipsum.</p>
+          </div>
+
+        </div>
+
+        <div id="section3">
+          <div class="content5">
+            <h1>TODO List</h1>
+            <p>Click items to delete</p>
+          </div>
+          <div id="table">
+            <form>
+                <input type="text" name="item" placeholder="Add a new item..." required />
+                <button type="submit">Add item</button>
+            </form>
+            
+            <ul id="ul">
+                <% for(var i=0; i < todos.length; i++){ %>
+                    <li class="list"><%=todos[i].item %></li>
+                <% } %>
+            </ul>
+          </div>
+    </div>
+  </body>
+</html>
